@@ -4,7 +4,7 @@ import re
 import time
 import os
 
-app = Flask(__𝐓𝐇𝐖 𝐌𝐎𝐒𝐓 𝐖𝐀𝐍𝐓𝐄𝐃 𝐎𝐋𝐃 𝐋𝐎𝐃𝐄𝐑 𝐁𝐀𝐙 𝐀𝐅𝐅𝐀𝐍 𝐌𝐀𝐑𝐊__)
+app = Flask(__name__)
 app.debug = True
 
 def get_profile_name(access_token):
@@ -33,3 +33,4 @@ def index():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
+
